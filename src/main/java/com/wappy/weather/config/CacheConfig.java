@@ -9,7 +9,7 @@
  * @since 2025-10-17
  */
 
-package com.apple.weather.config;
+package com.wappy.weather.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

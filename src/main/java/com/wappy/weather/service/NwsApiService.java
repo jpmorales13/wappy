@@ -8,10 +8,10 @@
  * @version 1.0
  * @since 2025-10-17
  */
-package com.apple.weather.service;
+package com.wappy.weather.service;
 
-import com.apple.weather.exception.ResourceNotFoundException;
-import com.apple.weather.model.Forecast;
+import com.wappy.weather.exception.ResourceNotFoundException;
+import com.wappy.weather.dto.Forecast;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

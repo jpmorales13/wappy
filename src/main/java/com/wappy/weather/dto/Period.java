@@ -9,7 +9,7 @@
  * @since 2025-10-17
  */
 
-package com.apple.weather.model;
+package com.wappy.weather.dto;
 
 public class Period {
     private int number;

@@ -8,9 +8,9 @@
  * @version 1.0
  * @since 2025-10-17
  */
-package com.apple.weather.service;
+package com.wappy.weather.service;
 
-import com.apple.weather.exception.ResourceNotFoundException;
+import com.wappy.weather.exception.ResourceNotFoundException;
 import com.google.maps.GeoApiContext;
 import com.google.maps.GeocodingApi;
 import com.google.maps.model.GeocodingResult;

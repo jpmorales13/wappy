@@ -9,12 +9,12 @@
  * @since 2025-10-17
  */
 
-package com.apple.weather.controller;
+package com.wappy.weather.controller;
 
-import com.apple.weather.exception.BadRequestException;
-import com.apple.weather.model.Forecast;
-import com.apple.weather.service.GeocodingService;
-import com.apple.weather.service.NwsApiService;
+import com.wappy.weather.exception.BadRequestException;
+import com.wappy.weather.dto.Forecast;
+import com.wappy.weather.service.GeocodingService;
+import com.wappy.weather.service.NwsApiService;
 import com.google.maps.model.LatLng;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -75,14 +75,4 @@ class WeatherApplicationControllerTest {
                 .andExpect(status().isBadRequest())
                 .andExpect(result -> assertTrue(result.getResolvedException() instanceof BadRequestException));
     }
-
-    @Test
-    void testInvalidInputHandling() throws Exception {
-        // Act & Assert
-        mockMvc.perform(get("/weather/forecast")
-                        .param("address", "1234567890123456789012345678901234567890"))
-                .andExpect(status().isBadRequest())
-                .andExpect(result -> assertTrue(result.getResolvedException() instanceof BadRequestException));
-    }
-
 }

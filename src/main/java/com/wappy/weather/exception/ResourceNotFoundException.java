@@ -9,7 +9,7 @@
  * @since 2025-10-17
  */
 
-package com.apple.weather.exception;
+package com.wappy.weather.exception;
 
 public class ResourceNotFoundException extends RuntimeException{
     public ResourceNotFoundException(String message) {

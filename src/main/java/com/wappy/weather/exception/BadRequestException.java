@@ -9,7 +9,7 @@
  * @since 2025-10-17
  */
 
-package com.apple.weather.exception;
+package com.wappy.weather.exception;
 
 public class BadRequestException extends RuntimeException{
     public BadRequestException(String message) {

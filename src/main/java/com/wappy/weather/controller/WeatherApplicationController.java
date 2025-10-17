@@ -9,12 +9,12 @@
  * @since 2025-10-17
  */
 
-package com.apple.weather.controller;
+package com.wappy.weather.controller;
 
-import com.apple.weather.exception.BadRequestException;
-import com.apple.weather.model.Forecast;
-import com.apple.weather.service.GeocodingService;
-import com.apple.weather.service.NwsApiService;
+import com.wappy.weather.exception.BadRequestException;
+import com.wappy.weather.dto.Forecast;
+import com.wappy.weather.service.GeocodingService;
+import com.wappy.weather.service.NwsApiService;
 import com.google.maps.model.LatLng;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

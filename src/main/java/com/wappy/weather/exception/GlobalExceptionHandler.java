@@ -9,7 +9,7 @@
  * @since 2025-10-17
  */
 
-package com.apple.weather.exception;
+package com.wappy.weather.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

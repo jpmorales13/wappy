@@ -158,11 +158,4 @@ Or using Postman’s *Params* tab:
 ---
 
 ## 📜 License
-Copyright (c) 2025 Juan Morales
-
-All rights reserved. This software and its source code are the property of Juan Morales.
-Unauthorized copying, modification, distribution, or use of this software, via any medium,
-is strictly prohibited without prior written permission and a valid commercial license.
-
-To obtain a license, please contact: [morales.juan.pablo@gmail.com].
-
+MIT — feel free to use and extend.
