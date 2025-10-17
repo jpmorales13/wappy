@@ -1,0 +1,39 @@
+Proprietary License – Wappy Weather Backend
+Copyright (c) 2025 Juan Morales. All rights reserved.
+
+This software and its source code (the "Software") are proprietary and confidential
+to Juan Morales ("Licensor"). No part of the Software may be copied, modified,
+distributed, sublicensed, or used in any form without the prior written permission
+of the Licensor and a valid commercial license agreement.
+
+1. License Grant
+   - A license to use this Software is granted only upon the purchase of a valid
+     commercial license agreement from the Licensor.
+   - Without such an agreement, you have no right to use, install, run, copy, modify,
+     or distribute this Software.
+
+2. Restrictions
+   - You may not copy, modify, distribute, sublicense, lease, rent, or otherwise
+     make the Software available to third parties without explicit authorization
+     from the Licensor.
+   - Reverse engineering, decompiling, or attempting to derive the source code is
+     prohibited, except as explicitly required by law.
+
+3. Ownership
+   - The Software is licensed, not sold. The Licensor retains all rights, title,
+     and interest in and to the Software, including all intellectual property rights.
+
+4. Termination
+   - Any unauthorized use of this Software will result in automatic termination of
+     the license and may subject you to civil and/or criminal penalties.
+
+5. Contact for Licensing
+   - To obtain a commercial license for this Software, please contact:
+     Juan Morales
+     Email: [your email here]
+     Website: [your website or LinkedIn here]
+
+By installing, copying, accessing, or otherwise using this Software, you acknowledge
+that you have read, understood, and agree to be bound by the terms of this License.
+
+Unauthorized use is strictly prohibited.
