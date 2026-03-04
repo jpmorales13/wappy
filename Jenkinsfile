@@ -1,28 +1,22 @@
 pipeline {
     agent any
-
     stages {
-        stage('Build') {
-            agent {
-                docker {
-                    image 'node:18-alpine'
-                    reuseNode true
+        stage('Build Image') {
+            steps {
+                script {
+                    // Build the image and store the reference in a variable
+                    dockerImage = docker.build("wappy:${env.BUILD_NUMBER}")
                 }
             }
-            steps {
-                sh '''
-                    echo "Building docker container..."
-                    docker build -t wappy
-                '''
-            }
         }
-
-        stage('Run') {
+        stage('Test Image') {
             steps {
-                sh '''
-                    echo "Running docker container..."
-                    docker run wappy
-                '''
+                script {
+                    // Run commands inside the newly built container
+                    dockerImage.inside {
+                        sh 'npm test'
+                    }
+                }
             }
         }
     }
