@@ -46,13 +46,13 @@ GET /weather/forecast?address={address}
 
 **Example:**
 ```
-GET http://localhost:8080/weather/forecast?address=11901%20Summer%20Springs%20Dr.%20Frisco%20TX%2075036
+GET http://localhost:8080/weather/forecast?address=355%20Stonebrook%20Pkwy%20Frisco%20TX%2075036
 ```
 
 **Response (simplified):**
 ```json
 {
-  "address": "11901 Summer Springs Dr. Frisco TX 75036",
+  "address": "355 Stonebrook Pkwy. Frisco TX 75036",
   "periods": [
     {
       "number": 1,
@@ -118,12 +118,12 @@ The backend uses Spring’s `@Cacheable` abstraction with Redis to cache forecas
 You can test using **Postman** or curl:
 
 ```bash
-curl "http://localhost:8080/weather/forecast?address=11901 Summer Springs Dr. Frisco TX 75036"
+curl "http://localhost:8080/weather/forecast?address=355 Stonebrook Pkwy Frisco TX 75036"
 ```
 
 Or using Postman’s *Params* tab:
 - Key: `address`  
-- Value: `11901 Summer Springs Dr. Frisco TX 75036`  
+- Value: `355 Stonebrook Pkwy Frisco TX 75036`  
 
 ---
 
