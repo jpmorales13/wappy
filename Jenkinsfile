@@ -33,7 +33,8 @@ pipeline {
 
                     // 2. Start the new container
                     // -d: detached mode, -p: port mapping, --name: container name
-                    sh "docker run -d --name ${IMAGE_NAME} -p 8080:8080 ${IMAGE_NAME}:${IMAGE_TAG}"
+                    sh "docker run -d --name ${IMAGE_NAME} -p 8081:8081 ${IMAGE_NAME}:${IMAGE_TAG}"
+                    sh 'echo "Wappy is running!"'
                 }
             }
         }
