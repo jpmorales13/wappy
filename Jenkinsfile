@@ -26,7 +26,7 @@ pipeline {
                     // Use the withRegistry block to authenticate with Docker Hub
                     docker.withRegistry('https://registry.hub.docker.com', DOCKER_CREDENTIAL_ID) {
                         // Builds the image from the Dockerfile in root
-                        def app = docker.build("${IMAGE_NAME}:${IMAGE_TAG}")
+                        def app = docker.build("${DOCKER_IMAGE}")
                         app.push()
                     }
                 }
