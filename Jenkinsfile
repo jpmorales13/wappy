@@ -35,6 +35,20 @@ pipeline {
             }
         }
 
+        stage('Install AWS CLI') {
+            steps {
+                sh '''
+                apt-get update -y
+                apt-get install -y docker.io unzip curl
+                curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+                unzip -o awscliv2.zip
+                ./aws/install
+                aws --version
+                '''
+            }
+        }
+
+
         stage('Deploy Infrastructure') {
             steps {
                 // Using the Global Variable AWS_REGION here
