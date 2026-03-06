@@ -5,9 +5,10 @@ pipeline {
         // Define application name and tag
         IMAGE_NAME = "wappy"
         IMAGE_TAG = "latest"
+        USER_NAME = 'jmorales13'
 
         // Define the Docker image name: <your-dockerhub-username>/<your-repo-name>
-        DOCKER_IMAGE = "jmorales13/${IMAGE_NAME}:${env.BUILD_ID}"
+        DOCKER_IMAGE = "${USER_NAME}/${IMAGE_NAME}:${env.BUILD_ID}"
         // Reference the Jenkins credential ID
         DOCKER_CREDENTIAL_ID = 'dockerhub-credentials'
         SERVICE_NAME  = "Wappy"
@@ -47,7 +48,7 @@ pipeline {
                                 SubnetID="${env.SUBNET_ID}" \
                                 ServiceName="${SERVICE_NAME}" \
                                 ServiceVersion="${env.BUILD_ID}" \
-                                DockerHubUsername="your-username"
+                                DockerHubUsername="${USER_NAME}"
                     """
                 }
             }
