@@ -10,6 +10,7 @@ pipeline {
         DOCKER_IMAGE = "jmorales13/${IMAGE_NAME}:${env.BUILD_ID}"
         // Reference the Jenkins credential ID
         DOCKER_CREDENTIAL_ID = 'dockerhub-credentials'
+        SERVICE_NAME  = "Wappy"
     }
 
     stages {
