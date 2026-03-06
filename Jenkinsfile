@@ -20,7 +20,7 @@ pipeline {
             }
         }
 
-        stage('Build Image') {
+        stage('Build and Push') {
             steps {
                 script {
                     // Use the withRegistry block to authenticate with Docker Hub
