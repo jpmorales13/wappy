@@ -32,5 +32,24 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy Infrastructure') {
+            steps {
+                // Using the Global Variable AWS_REGION here
+                withAWS(credentials: 'aws-credentials', region: "${env.AWS_REGION}") {
+                    sh """
+                        aws cloudformation deploy \
+                            --template-file ecs.yml \
+                            --stack-name ${SERVICE_NAME}-stack \
+                            --capabilities CAPABILITY_IAM \
+                            --parameter-overrides \
+                                SubnetID="${env.SUBNET_ID}" \
+                                ServiceName="${SERVICE_NAME}" \
+                                ServiceVersion="${env.BUILD_ID}" \
+                                DockerHubUsername="your-username"
+                    """
+                }
+            }
+        }
     }
 }
