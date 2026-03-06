@@ -38,7 +38,7 @@ pipeline {
         stage('Deploy Infrastructure') {
             steps {
                 // Using the Global Variable AWS_REGION here
-                withAWS(credentials: 'aws-credentials', region: "${env.AWS_REGION}") {
+                withAWS(credentials: 'aws-credentials', region: "${env.REGION}") {
                     sh """
                         aws cloudformation deploy \
                             --template-file ecs.yml \
